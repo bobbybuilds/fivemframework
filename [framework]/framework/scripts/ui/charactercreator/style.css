@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background: transparent;
+    font-family: Arial, sans-serif;
+  }
+  
+  #menu {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    width: 350px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .header {
+    font-size: 26px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .menu-item {
+    font-size: 20px;
+    color: white;
+    text-shadow: 1px 1px 0 black;
+    padding: 8px 0;
+    transition: background 0.2s;
+  }
+  
+  .menu-item.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .submenu {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .submenu-header {
+    font-size: 22px;
+    color: white;
+    text-shadow: 2px 2px 0 black;
+    margin-bottom: 10px;
+  }
+  
+  .submenu-option {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 0 black;
+    padding: 5px 0;
+  }
+  
+  .submenu-option.selected {
+    background-color: rgba(255, 255, 255, 0.2);
+  }

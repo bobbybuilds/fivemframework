@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: monospace;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-size: 2rem;
+        }
+
+        .loader::after {
+            content: '.';
+            animation: dots 1.5s infinite;
+        }
+
+        @keyframes dots {
+            0%   { content: '.'; }
+            25%  { content: '..'; }
+            50%  { content: '...'; }
+            75%  { content: '..'; }
+            100% { content: '.'; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">Something's cooking</div>
+</body>
+</html>
